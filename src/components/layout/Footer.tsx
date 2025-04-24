@@ -4,8 +4,11 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-onedine-brown text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gradient-to-br from-onedine-brown/90 to-onedine-brown/70 text-white pt-16 pb-8 relative overflow-hidden">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 opacity-10 bg-pattern"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & About */}
           <div className="space-y-4">
@@ -13,17 +16,17 @@ export function Footer() {
               <img
                 src="/lovable-uploads/b837b8eb-06ee-4d09-837e-2db1111284f7.png"
                 alt="OneDine Logo"
-                className="h-16 bg-white p-2 rounded"
+                className="h-16 bg-white p-2 rounded-lg shadow-lg hover:scale-105 transition-transform"
               />
             </Link>
-            <p className="text-sm text-gray-300 mt-4">
+            <p className="text-sm text-gray-300 mt-4 leading-relaxed">
               OneDine offers a unique blend of cuisines, bringing together flavors from around the world in an elegant dining experience.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-playfair mb-4">Quick Links</h3>
+            <h3 className="text-xl font-playfair mb-4 border-b border-onedine-gold/30 pb-2">Quick Links</h3>
             <ul className="space-y-2">
               {[
                 { title: "Home", path: "/" },
@@ -36,7 +39,7 @@ export function Footer() {
                 <li key={link.path}>
                   <Link 
                     to={link.path}
-                    className="text-gray-300 hover:text-white transition-colors"
+                    className="text-gray-300 hover:text-onedine-gold hover:translate-x-1 transition-all duration-300"
                   >
                     {link.title}
                   </Link>
@@ -47,19 +50,31 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-playfair mb-4">Contact Us</h3>
+            <h3 className="text-xl font-playfair mb-4 border-b border-onedine-gold/30 pb-2">Contact Us</h3>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>123 Cuisine Street</p>
-              <p>Foodie District</p>
-              <p>Gourmet City, GC 12345</p>
+              <p className="flex items-center gap-2">
+                <span className="text-onedine-gold">📍</span> 123 Cuisine Street
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="text-onedine-gold">🏙️</span> Foodie District
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="text-onedine-gold">🌐</span> Gourmet City, GC 12345
+              </p>
               <p className="mt-4">
-                <a href="tel:+11234567890" className="hover:text-white transition-colors">
-                  Phone: (123) 456-7890
+                <a 
+                  href="tel:+11234567890" 
+                  className="flex items-center gap-2 hover:text-onedine-gold transition-colors"
+                >
+                  <span className="text-onedine-gold">📞</span> (123) 456-7890
                 </a>
               </p>
               <p>
-                <a href="mailto:info@onedine.com" className="hover:text-white transition-colors">
-                  Email: info@onedine.com
+                <a 
+                  href="mailto:info@onedine.com" 
+                  className="flex items-center gap-2 hover:text-onedine-gold transition-colors"
+                >
+                  <span className="text-onedine-gold">✉️</span> info@onedine.com
                 </a>
               </p>
             </address>
@@ -67,23 +82,26 @@ export function Footer() {
 
           {/* Opening Hours */}
           <div>
-            <h3 className="text-xl font-playfair mb-4">Opening Hours</h3>
+            <h3 className="text-xl font-playfair mb-4 border-b border-onedine-gold/30 pb-2">Opening Hours</h3>
             <ul className="text-gray-300 space-y-2">
-              <li className="flex justify-between">
+              <li className="flex justify-between hover:bg-white/5 p-1 rounded transition-colors">
                 <span>Monday - Thursday</span>
-                <span>11:00 - 22:00</span>
+                <span className="text-onedine-gold">11:00 - 22:00</span>
               </li>
-              <li className="flex justify-between">
+              <li className="flex justify-between hover:bg-white/5 p-1 rounded transition-colors">
                 <span>Friday - Saturday</span>
-                <span>11:00 - 23:00</span>
+                <span className="text-onedine-gold">11:00 - 23:00</span>
               </li>
-              <li className="flex justify-between">
+              <li className="flex justify-between hover:bg-white/5 p-1 rounded transition-colors">
                 <span>Sunday</span>
-                <span>10:00 - 22:00</span>
+                <span className="text-onedine-gold">10:00 - 22:00</span>
               </li>
               <li className="mt-4">
-                <Link to="/reservation" className="text-onedine-gold hover:underline">
-                  Book a Table
+                <Link 
+                  to="/reservation" 
+                  className="text-onedine-gold hover:underline flex items-center gap-2"
+                >
+                  <span>📅</span> Book a Table
                 </Link>
               </li>
             </ul>
@@ -97,7 +115,7 @@ export function Footer() {
               href="https://facebook.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-onedine-gold transition-colors"
+              className="text-white hover:text-onedine-gold transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20"
               aria-label="Facebook"
             >
               <Facebook size={20} />
@@ -106,7 +124,7 @@ export function Footer() {
               href="https://instagram.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-onedine-gold transition-colors"
+              className="text-white hover:text-onedine-gold transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20"
               aria-label="Instagram"
             >
               <Instagram size={20} />
@@ -115,7 +133,7 @@ export function Footer() {
               href="https://twitter.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-onedine-gold transition-colors"
+              className="text-white hover:text-onedine-gold transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20"
               aria-label="Twitter"
             >
               <Twitter size={20} />
