@@ -24,7 +24,7 @@ export function MenuItem({
       )}
     >
       {image && (
-        <div className="w-full md:w-32 h-32 overflow-hidden rounded-lg flex-shrink-0">
+        <div className="w-full md:w-48 h-48 overflow-hidden rounded-lg flex-shrink-0">
           <img
             src={image}
             alt={name}

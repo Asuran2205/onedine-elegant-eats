@@ -191,7 +191,7 @@ const Menu = () => {
             </div>
           </ScrollAnimation>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {menuItems[activeCategory as keyof typeof menuItems].map((item, index) => (
               <ScrollAnimation key={`${activeCategory}-${index}`} delay={index * 100}>
                 <MenuItem {...item} />
