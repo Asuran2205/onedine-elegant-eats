@@ -1,10 +1,9 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-onedine-brown/90 to-onedine-brown/70 text-white pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-[#1A1F2C] to-[#221F26] text-white pt-16 pb-8 relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-10 bg-pattern"></div>
       
@@ -109,7 +108,7 @@ export function Footer() {
         </div>
 
         {/* Social & Copyright */}
-        <div className="mt-12 pt-6 border-t border-gray-700 flex flex-col md:flex-row items-center justify-between">
+        <div className="mt-12 pt-6 border-t border-gray-700/30 flex flex-col md:flex-row items-center justify-between">
           <div className="flex space-x-4 mb-4 md:mb-0">
             <a 
               href="https://facebook.com" 
