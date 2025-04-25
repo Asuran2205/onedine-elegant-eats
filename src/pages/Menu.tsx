@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ScrollAnimation } from "@/components/utils/ScrollAnimation";
 import { MenuItem } from "@/components/menu/MenuItem";
@@ -14,20 +13,20 @@ const Menu = () => {
     { id: "beverages", name: "Beverages" },
   ];
 
-  // Menu items by category
   const menuItems = {
     starters: [
       {
         name: "Truffle Arancini",
         description: "Crispy risotto balls with black truffle and mozzarella, served with truffle aioli",
         price: "$16",
-        image: "https://images.unsplash.com/photo-1632343886840-97254c3e938d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        image: "https://images.unsplash.com/photo-1541517627790-94159afb3d65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
       {
         name: "Roasted Beet Salad",
         description: "Heirloom beets with goat cheese, arugula, and candied walnuts in a citrus vinaigrette",
         price: "$14",
         featured: true,
+        image: "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
       {
         name: "Seared Scallops",
@@ -39,11 +38,13 @@ const Menu = () => {
         name: "Yellowfin Tuna Tartare",
         description: "Hand-cut tuna with avocado, cucumber, and wasabi-soy vinaigrette",
         price: "$18",
+        image: "https://images.unsplash.com/photo-1579584207473-c00effcba9d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
       {
         name: "Wild Mushroom Soup",
         description: "Creamy blend of seasonal mushrooms with truffle crème fraîche and herb oil",
         price: "$12",
+        image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
     ],
     mains: [
@@ -57,30 +58,33 @@ const Menu = () => {
       {
         name: "Wild Mushroom Risotto",
         description: "Creamy Arborio rice with wild mushrooms, truffle oil, and Parmigiano-Reggiano",
-        price: "$22",
+        price: "$28",
         image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
       {
         name: "Pan Seared Halibut",
         description: "Sustainably caught halibut with sweet corn purée, grilled asparagus, and lemon butter sauce",
         price: "$36",
+        image: "https://images.unsplash.com/photo-1534043464124-3be32fe000c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
       {
         name: "Braised Short Rib",
-        description: "Slow-cooked beef short rib with red wine reduction, served with garlic mashed potatoes and seasonal vegetables",
+        description: "Slow-cooked beef short rib with red wine reduction, served with garlic mashed potatoes",
         price: "$32",
         image: "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
       {
-        name: "Saffron Seafood Paella",
-        description: "Traditional Spanish rice dish with shrimp, mussels, clams, and chorizo",
-        price: "$28",
+        name: "Grilled Wagyu Ribeye",
+        description: "Premium grade Wagyu beef with truffle butter and seasonal vegetables",
+        price: "$65",
+        image: "https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        featured: true,
       },
       {
-        name: "Roasted Vegetable Wellington",
-        description: "Seasonal vegetables and mushroom duxelles wrapped in puff pastry with roasted pepper coulis",
-        price: "$24",
-        featured: true,
+        name: "Roasted Duck Breast",
+        description: "Crispy skinned duck with cherry gastrique and wild rice pilaf",
+        price: "$38",
+        image: "https://images.unsplash.com/photo-1619860705243-43f23b69d538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
     ],
     desserts: [
@@ -95,16 +99,19 @@ const Menu = () => {
         name: "Crème Brûlée",
         description: "Classic vanilla bean custard with caramelized sugar crust",
         price: "$12",
+        image: "https://images.unsplash.com/photo-1615498566670-33de1641a153?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
       {
-        name: "Lemon Tart",
-        description: "Tangy lemon curd in a buttery shortbread crust with Italian meringue",
-        price: "$10",
-      },
-      {
-        name: "Seasonal Fruit Pavlova",
-        description: "Crisp meringue topped with whipped cream and seasonal berries",
+        name: "Tiramisu",
+        description: "Coffee-soaked ladyfingers layered with mascarpone cream",
         price: "$11",
+        image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      },
+      {
+        name: "Apple Tarte Tatin",
+        description: "Caramelized apple tart served with vanilla ice cream",
+        price: "$13",
+        image: "https://images.unsplash.com/photo-1567191001695-d6d7d90e1011?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
     ],
     beverages: [
@@ -112,27 +119,20 @@ const Menu = () => {
         name: "Wine Selection",
         description: "Extensive selection of domestic and international wines - ask for our complete wine list",
         price: "Varies",
+        image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
       {
         name: "Craft Cocktails",
         description: "House-made signature cocktails with premium spirits and fresh ingredients",
         price: "$14-18",
+        image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
       {
         name: "Artisanal Mocktails",
         description: "Creative non-alcoholic beverages featuring fresh fruits and herbs",
         price: "$9",
         featured: true,
-      },
-      {
-        name: "Espresso & Coffee",
-        description: "Locally roasted coffee, espresso, cappuccino, and more",
-        price: "$5-7",
-      },
-      {
-        name: "Premium Tea Selection",
-        description: "Curated selection of loose-leaf teas from around the world",
-        price: "$6",
+        image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       },
     ],
   };
