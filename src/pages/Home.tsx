@@ -61,7 +61,7 @@ const Home = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair text-white mb-6 neon-text">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair text-white mb-6">
             Culinary Excellence <br />
             <span className="text-onedine-gold">Redefined</span>
           </h1>
@@ -119,7 +119,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimation>
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-playfair text-onedine-brown mb-4 neon-text">
+              <h2 className="text-3xl md:text-4xl font-playfair text-onedine-brown mb-4">
                 Our Featured <span className="text-onedine-burgundy">Dishes</span>
               </h2>
               <div className="w-20 h-1 bg-onedine-gold mx-auto mb-4"></div>
@@ -150,7 +150,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimation>
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-playfair text-onedine-brown mb-4 neon-text">
+              <h2 className="text-3xl md:text-4xl font-playfair text-onedine-brown mb-4">
                 Guest <span className="text-onedine-burgundy">Testimonials</span>
               </h2>
               <div className="w-20 h-1 bg-onedine-gold mx-auto mb-4"></div>
@@ -183,7 +183,7 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <ScrollAnimation>
-              <h2 className="text-3xl md:text-4xl font-playfair mb-4 neon-text">
+              <h2 className="text-3xl md:text-4xl font-playfair mb-4">
                 Reserve Your Table Today
               </h2>
               <p className="mb-8 text-white/90">

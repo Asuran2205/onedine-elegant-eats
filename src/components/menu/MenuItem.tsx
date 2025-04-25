@@ -18,7 +18,7 @@ export function MenuItem({
 }: MenuItemProps) {
   return (
     <div className={`p-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${
-      featured ? 'neon-border' : 'border border-gray-100'
+      featured ? 'border-2 border-onedine-gold' : 'border border-gray-100'
     }`}>
       {image && (
         <div className="w-full md:w-48 h-48 overflow-hidden rounded-lg flex-shrink-0">
@@ -31,18 +31,12 @@ export function MenuItem({
       )}
       <div className="flex-grow">
         <div className="flex justify-between items-start">
-          <h3 className={cn(
-            "text-lg font-medium font-playfair",
-            featured && "neon-text"
-          )}>{name}</h3>
-          <span className={cn(
-            "text-onedine-burgundy font-medium ml-2",
-            featured && "neon-text"
-          )}>{price}</span>
+          <h3 className="text-lg font-medium font-playfair">{name}</h3>
+          <span className="text-onedine-burgundy font-medium ml-2">{price}</span>
         </div>
         <p className="text-gray-600 mt-1 text-sm">{description}</p>
         {featured && (
-          <span className="inline-block mt-2 text-xs bg-onedine-gold px-2 py-1 rounded text-white neon-box">
+          <span className="inline-block mt-2 text-xs bg-onedine-gold px-2 py-1 rounded text-white">
             Chef's Choice
           </span>
         )}
