@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 
 interface MenuItemProps {
@@ -17,12 +16,9 @@ export function MenuItem({
   featured = false,
 }: MenuItemProps) {
   return (
-    <div
-      className={cn(
-        "group flex flex-col md:flex-row gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-gray-50",
-        featured && "border border-onedine-gold/30"
-      )}
-    >
+    <div className={`p-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ${
+      featured ? 'border-2 border-onedine-gold' : 'border border-gray-100'
+    }`}>
       {image && (
         <div className="w-full md:w-48 h-48 overflow-hidden rounded-lg flex-shrink-0">
           <img

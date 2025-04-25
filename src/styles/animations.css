@@ -1,0 +1,63 @@
+
+/* Base animation styles */
+.animate-on-scroll {
+  will-change: transform, opacity;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) scale(1) !important;
+}
+
+/* Page transition animations */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms, transform 400ms;
+}
+
+/* Hover animations */
+.hover-lift {
+  transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Interactive elements animations */
+.btn-primary, 
+.btn-outline,
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.menu-item-divider {
+  transition: opacity 0.3s ease;
+}
+
+/* Loading state animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.loading-shimmer {
+  background: linear-gradient(90deg, 
+    rgba(255,255,255,0) 0%, 
+    rgba(255,255,255,0.2) 50%, 
+    rgba(255,255,255,0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+

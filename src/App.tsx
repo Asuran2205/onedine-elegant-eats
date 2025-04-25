@@ -14,6 +14,7 @@ import Reservation from "./pages/Reservation";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import "./styles/animations.css";
 
 const queryClient = new QueryClient();
 
@@ -26,7 +27,7 @@ const App = () => (
         <ScrollToTop />
         <div className="flex flex-col min-h-screen">
           <Navbar />
-          <main className="flex-grow">
+          <main className="flex-grow page-enter page-enter-active">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/menu" element={<Menu />} />
@@ -45,3 +46,4 @@ const App = () => (
 );
 
 export default App;
+
