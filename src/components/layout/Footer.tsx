@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter , Utensils, MapIcon } from "lucide-react";
 
 export function Footer() {
   return (
@@ -52,20 +52,20 @@ export function Footer() {
             <h3 className="text-xl font-playfair mb-4 border-b border-onedine-gold/30 pb-2">Contact Us</h3>
             <address className="not-italic text-gray-300 space-y-2">
               <p className="flex items-center gap-2">
-                <span className="text-onedine-gold">📍</span> 123 Cuisine Street
+                <span className="text-onedine-gold">📍</span> 251/1 Eskay Residency
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-onedine-gold">🏙️</span> Foodie District
+                <span className="text-onedine-gold">🏙️</span> Paramathi Road
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-onedine-gold">🌐</span> Gourmet City, GC 12345
+                <span className="text-onedine-gold">🌐</span> Namakkal - 637003, Tamil Nadu
               </p>
               <p className="mt-4">
                 <a 
-                  href="tel:+11234567890" 
+                  href="tel:+917031643164" 
                   className="flex items-center gap-2 hover:text-onedine-gold transition-colors"
                 >
-                  <span className="text-onedine-gold">📞</span> (123) 456-7890
+                  <span className="text-onedine-gold">📞</span> +917031643164
                 </a>
               </p>
               <p>
@@ -111,16 +111,16 @@ export function Footer() {
         <div className="mt-12 pt-6 border-t border-gray-700/30 flex flex-col md:flex-row items-center justify-between">
           <div className="flex space-x-4 mb-4 md:mb-0">
             <a 
-              href="https://facebook.com" 
+              href="http://zoma.to/r/19699071" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-onedine-gold transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20"
               aria-label="Facebook"
             >
-              <Facebook size={20} />
+              <Utensils size={20} />
             </a>
             <a 
-              href="https://instagram.com" 
+              href="https://www.instagram.com/onedine_namakkal/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-onedine-gold transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20"
@@ -129,13 +129,13 @@ export function Footer() {
               <Instagram size={20} />
             </a>
             <a 
-              href="https://twitter.com" 
+              href="https://maps.app.goo.gl/Up1UsF7d5vN7UE36A" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-onedine-gold transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20"
               aria-label="Twitter"
             >
-              <Twitter size={20} />
+              <MapIcon size={20} />
             </a>
           </div>
           <p className="text-sm text-gray-400">

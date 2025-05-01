@@ -101,7 +101,8 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out',
 				'fade-out': 'fade-out 0.5s ease-out',
 				'slide-from-right': 'slide-from-right 0.3s ease-out',
-				'slide-to-right': 'slide-to-right 0.3s ease-out'
+				'slide-to-right': 'slide-to-right 0.3s ease-out',
+				'spin-slow': 'spin 20s linear infinite'
 			}
 		}
 	},

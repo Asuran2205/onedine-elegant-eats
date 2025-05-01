@@ -287,8 +287,9 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <ScrollAnimation>
             <div className="rounded-lg overflow-hidden shadow-lg h-[400px]">
+            
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986652425023!3d40.697149422113014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1677860126284!5m2!1sen!2sca" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.57669744407!2d78.15802057504834!3d11.218922588958005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babcf2caac4f6d5%3A0x9c439cd2b9944877!2sOne%20Dine%20Namakkal!5e0!3m2!1sen!2sin!4v1746010811311!5m2!1sen!2sin"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

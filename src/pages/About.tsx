@@ -10,18 +10,6 @@ const About = () => {
       bio: "With over 20 years of experience in Michelin-starred restaurants across Europe, Chef Michael brings his passion for innovative cuisine and commitment to excellence to OneDine.",
       image: "https://images.unsplash.com/photo-1566554273541-37a9ca77b91f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     },
-    {
-      name: "Sophia Chen",
-      role: "Sous Chef",
-      bio: "A graduate of the Culinary Institute of America, Sophia specializes in fusion cuisine that marries Eastern and Western techniques and flavors.",
-      image: "https://images.unsplash.com/photo-1607631568010-a87245c0dbd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      name: "David Williams",
-      role: "Pastry Chef",
-      bio: "David's innovative approach to desserts has earned him recognition in the culinary world. He brings creativity and precision to OneDine's sweet offerings.",
-      image: "https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-    },
   ];
 
   // Timeline events
@@ -173,14 +161,14 @@ const About = () => {
             </div>
           </ScrollAnimation>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 gap-8">
             {team.map((member, index) => (
               <ScrollAnimation key={member.name} delay={index * 100}>
                 <div className="bg-white rounded-lg overflow-hidden shadow-custom hover-scale">
                   <img 
                     src={member.image} 
                     alt={member.name} 
-                    className="w-full h-64 object-cover object-center"
+                    className="w-full h-64 object-contain object-center"
                   />
                   <div className="p-6">
                     <h3 className="text-xl font-medium font-playfair text-onedine-brown">{member.name}</h3>
@@ -195,7 +183,7 @@ const About = () => {
       </section>
 
       {/* Our Journey */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <ScrollAnimation>
             <div className="text-center max-w-3xl mx-auto mb-12">
@@ -215,11 +203,9 @@ const About = () => {
                     <span className="text-onedine-gold font-playfair font-bold">{event.year}</span>
                   </div>
                   <div className="relative pb-8">
-                    {/* Timeline connector */}
                     {index < timeline.length - 1 && (
                       <div className="absolute top-5 left-4 -ml-px h-full w-0.5 bg-onedine-gold/30"></div>
                     )}
-                    {/* Timeline dot */}
                     <div className="absolute top-1 -left-2 w-6 h-6 bg-white rounded-full border-2 border-onedine-gold"></div>
                     <div className="ml-6">
                       <h3 className="text-lg font-medium font-playfair text-onedine-brown">{event.title}</h3>
@@ -231,7 +217,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

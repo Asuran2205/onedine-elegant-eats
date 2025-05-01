@@ -3,6 +3,7 @@ import { ChevronRight } from "lucide-react";
 import { ScrollAnimation } from "@/components/utils/ScrollAnimation";
 import { MenuItem } from "@/components/menu/MenuItem";
 import { TestimonialCard } from "@/components/home/TestimonialCard";
+import Food from "@/components/food/food";
 
 const Home = () => {
   // Featured dishes data
@@ -10,20 +11,21 @@ const Home = () => {
     {
       name: "Seared Scallops",
       description: "Pan-seared Atlantic scallops with cauliflower purée, crispy pancetta and chive oil",
-      price: "$24",
+      price: "₹240",
       image: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       featured: true,
     },
     {
       name: "Wild Mushroom Risotto",
       description: "Creamy Arborio rice with wild mushrooms, truffle oil, and Parmigiano-Reggiano",
-      price: "$22",
+      price: "₹220",
       image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      featured: true,
     },
     {
       name: "Braised Short Rib",
-      description: "Slow-cooked beef short rib with red wine reduction, served with garlic mashed potatoes and seasonal vegetables",
-      price: "$32",
+      description: "Slow-cooked beef short rib with red wine reduction, served with garlic mashed potatoes.",
+      price: "₹320",
       image: "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       featured: true,
     },
@@ -35,7 +37,6 @@ const Home = () => {
       quote: "OneDine consistently delivers exceptional dining experiences. The braised short rib is absolute perfection!",
       author: "Emma Johnson",
       role: "Food Critic",
-      featured: true,
     },
     {
       quote: "The attention to detail in presentation and flavors is what sets OneDine apart from other fine dining establishments.",
@@ -52,12 +53,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="h-screen relative flex items-center justify-center">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
+        <Food />
+        <div className="absolute inset-0 z-0 bg-black">
+          {/* <img 
             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80" 
             alt="Restaurant interior" 
             className="w-full h-full object-cover brightness-50"
-          />
+          /> */}
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center">

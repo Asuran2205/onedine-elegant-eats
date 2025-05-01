@@ -1,7 +1,37 @@
 import { useState } from "react";
 import { ScrollAnimation } from "@/components/utils/ScrollAnimation";
 import { MenuItem } from "@/components/menu/MenuItem";
-
+import starter_1 from '@/assets/images/starter_1.jpg';
+import starter_2 from '@/assets/images/starter_2.jpg';
+import starter_4 from '@/assets/images/starter_4.avif';
+import starter_3 from '@/assets/images/starter_3.jpg';
+import starter_5 from '@/assets/images/starter_5.jpeg';
+import starter_6 from '@/assets/images/starter_6.jpg';
+import starter_7 from '@/assets/images/starter_7.jpg';
+import starter_8 from '@/assets/images/starter_8.webp';
+import starter_9 from '@/assets/images/starter_9.jpeg';
+import starter_10 from '@/assets/images/starter_10.jpg';
+import mains_1 from '@/assets/images/mains_1.jpg';
+import mains_2 from '@/assets/images/mains_2.jpg';
+import mains_3 from '@/assets/images/mains_3.jpg';
+import mains_4 from '@/assets/images/mains_4.jpg';
+import mains_5 from '@/assets/images/mains_5.jpg';
+import mains_6 from '@/assets/images/mains_6.jpeg';
+import mains_7 from '@/assets/images/mains_7.webp';
+import mains_8 from '@/assets/images/mains_8.jpg';
+import mains_9 from '@/assets/images/mains_9.jpg';
+import mains_10 from '@/assets/images/mains_10.jpg';
+import dessert_1 from '@/assets/images/dessert_1.webp';
+import dessert_2 from '@/assets/images/dessert_2.webp';
+import dessert_3 from '@/assets/images/dessert_3.jpg';
+import dessert_4 from '@/assets/images/dessert_4.jpg';
+import dessert_5 from '@/assets/images/dessert_5.webp';
+import beverages_1 from '@/assets/images/beverages_1.webp';
+import beverages_2 from '@/assets/images/beverages_2.jpeg';
+import beverages_3 from '@/assets/images/beverages_3.webp';
+import beverages_4 from '@/assets/images/beverages_4.jpg';
+import beverages_5 from '@/assets/images/beverages_5.webp';
+import beverages_6 from '@/assets/images/beverages_6.jpg';
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState("starters");
 
@@ -16,124 +46,206 @@ const Menu = () => {
   const menuItems = {
     starters: [
       {
-        name: "Truffle Arancini",
-        description: "Crispy risotto balls with black truffle and mozzarella, served with truffle aioli",
-        price: "$16",
-        image: "https://images.unsplash.com/photo-1541517627790-94159afb3d65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Bang bang cauliflower",
+        description: "Crispy cauliflower florets tossed in a spicy creamy sauce, garnished with spring onions and sesame seeds",
+        price: "₹290",
+        image: starter_1,
       },
       {
-        name: "Roasted Beet Salad",
-        description: "Heirloom beets with goat cheese, arugula, and candied walnuts in a citrus vinaigrette",
-        price: "$14",
-        featured: true,
-        image: "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Crispy Fried Mozzarella Balls",
+        description: "Golden-fried mozzarella bites with a crunchy coating, served with a side of tangy marinara sauce",
+        price: "₹290",
+        image: starter_2,
       },
       {
-        name: "Seared Scallops",
-        description: "Pan-seared Atlantic scallops with cauliflower purée, crispy pancetta and chive oil",
-        price: "$24",
-        image: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Crumb Fried Baby Corn",
+        description: "Tender baby corn coated in seasoned breadcrumbs, deep-fried to perfection and served with a spicy dip",
+        price: "₹290",
+        image: starter_3
       },
       {
-        name: "Yellowfin Tuna Tartare",
-        description: "Hand-cut tuna with avocado, cucumber, and wasabi-soy vinaigrette",
-        price: "$18",
-        image: "https://images.unsplash.com/photo-1579584207473-c00effcba9d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Crispy Chilli Garlic Baby Corn",
+        description: "Baby corn stir-fried with garlic, chilies, and Asian spices, finished with a crisp, flavorful glaze",
+        price: "₹290",
+        image: starter_4,
       },
       {
-        name: "Wild Mushroom Soup",
-        description: "Creamy blend of seasonal mushrooms with truffle crème fraîche and herb oil",
-        price: "$12",
-        image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Dragon Paneer",
+        description: "Soft paneer bites flash-fried and coated in a bold, spicy sauce with a smoky hint, tossed with crunchy veggies",
+        price: "₹310",
+        image: starter_5,
       },
+      {
+        name: "Honey Glazed Assorted Vegetables",
+        description: "A colorful medley of seasonal vegetables sautéed to perfection and finished with a delicate honey glaze for a sweet-savory balance",
+        price: "₹290",
+        image: starter_6,
+      },
+      {
+        name: "Roasted Double Mushroom",
+        description: "A rich blend of button and shiitake mushrooms, slow-roasted with herbs and garlic, delivering deep umami flavors in every bite",
+        price: "₹315",
+        image: starter_7,
+      },
+      {
+        name: "Chicken Momos",
+        description: "Steamed dumplings filled with juicy minced chicken and aromatic spices, served with spicy red chilli chutney",
+        price: "₹260",
+        image: starter_8,
+      },
+      {
+        name: "Chicken Lollipop",
+        description: "Frenched chicken wings marinated in bold spices, deep-fried until crisp, and served with a tangy schezwan dip",
+        price: "₹345",
+        image: starter_9,
+      },
+      {
+        name: "Dragon Chicken",
+        description: "Crispy strips of chicken tossed in a fiery, tangy sauce with bell peppers and spring onions, delivering bold Indo-Chinese flair",
+        price: "₹345",
+        image: starter_10,
+      },
+      
     ],
     mains: [
       {
-        name: "Herb Crusted Rack of Lamb",
-        description: "Dijon mustard and herb crusted lamb with root vegetables and red wine reduction",
-        price: "$42",
-        image: "https://images.unsplash.com/photo-1514516345957-556ca7c90a34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
-        featured: true,
+        name: "Alfaham Chicken",
+        description: "Middle Eastern-style grilled chicken marinated in aromatic spices and flame-cooked for a smoky, juicy finish",
+        price: "₹198",
+        image: mains_1,
+        // featured: true,
       },
       {
-        name: "Wild Mushroom Risotto",
-        description: "Creamy Arborio rice with wild mushrooms, truffle oil, and Parmigiano-Reggiano",
-        price: "$28",
-        image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Tandoori Chicken",
+        description: "Chicken marinated in yogurt and traditional tandoori spices, cooked in a clay oven for a charred, flavorful exterior",
+        price: "₹162",
+        image: mains_2,
       },
       {
-        name: "Pan Seared Halibut",
-        description: "Sustainably caught halibut with sweet corn purée, grilled asparagus, and lemon butter sauce",
-        price: "$36",
-        image: "https://images.unsplash.com/photo-1534043464124-3be32fe000c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Chicken Burnt Garlic Fried Rice",
+        description: "Fragrant rice stir-fried with chicken, crispy burnt garlic, and vegetables for a bold, smoky twist on a classic favorite",
+        price: "₹330",
+        image: mains_3,
       },
       {
-        name: "Braised Short Rib",
-        description: "Slow-cooked beef short rib with red wine reduction, served with garlic mashed potatoes",
-        price: "$32",
-        image: "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Chicken Chinese Chopsuey",
+        description: "Crispy noodles topped with a savory chicken and vegetable stir-fry in a tangy, flavorful Chinese-style sauce",
+        price: "₹330",
+        image: mains_4,
       },
       {
-        name: "Grilled Wagyu Ribeye",
-        description: "Premium grade Wagyu beef with truffle butter and seasonal vegetables",
-        price: "$65",
-        image: "https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
-        featured: true,
+        name: "Chicken Kadapa Pulao",
+        description: "A fragrant South Indian-style pulao featuring tender chicken pieces cooked with aromatic spices, herbs, and mildly spiced rice",
+        price: "₹330",
+        image: mains_5,
       },
       {
-        name: "Roasted Duck Breast",
-        description: "Crispy skinned duck with cherry gastrique and wild rice pilaf",
-        price: "$38",
-        image: "https://images.unsplash.com/photo-1619860705243-43f23b69d538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Chicken Soupy Asian Noodles",
+        description: "Slurpy noodles in a savory chicken broth, packed with vegetables, herbs, and a hint of soy for a comforting Asian-inspired dish",
+        price: "₹330",
+        image: mains_6,
       },
+      {
+        name: "Jeera Rice",
+        description: "Fragrant basmati rice cooked with cumin seeds, offering a simple yet flavorful accompaniment to any meal",
+        price: "₹240",
+        image: mains_7,
+      },
+      {
+        name: "Nei Choru",
+        description: "Fragrant rice cooked in ghee with a subtle blend of spices, offering a rich and aromatic South Indian delight",
+        price: "₹240",
+        image: mains_8,
+      },
+      {
+        name: "Prawns Burnt Garlic Fried Rice",
+        description: "A delicious fusion of succulent prawns and fragrant fried rice, tossed with crispy burnt garlic for an irresistible, flavorful kick",
+        price: "₹380",
+        image: mains_9,
+      },
+      {
+        name: "Chicken Ramen Noodles",
+        description: "Tender chicken pieces in a rich, flavorful broth with perfectly cooked ramen noodles, topped with fresh veggies and herbs for a satisfying, savory meal",
+        price: "₹440",
+        image: mains_10,
+      },
+      
     ],
     desserts: [
       {
-        name: "Dark Chocolate Soufflé",
-        description: "Warm chocolate soufflé with vanilla bean ice cream and chocolate sauce",
-        price: "$14",
-        image: "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
-        featured: true,
+        name: "Biscoff Cheese Cake",
+        description: "A creamy, indulgent cheesecake with a crunchy Biscoff biscuit base, topped with a luscious layer of caramelized Biscoff spread for a perfect blend of sweet and rich flavors",
+        price: "₹300",
+        image: dessert_1,
+        // featured: true,
       },
       {
-        name: "Crème Brûlée",
-        description: "Classic vanilla bean custard with caramelized sugar crust",
-        price: "$12",
-        image: "https://images.unsplash.com/photo-1615498566670-33de1641a153?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Blueberry Cheese Cake",
+        description: "A creamy, smooth cheesecake topped with a vibrant blueberry compote, offering a perfect balance of tangy and sweet flavors in every bite",
+        price: "₹300",
+        image: dessert_2,
+        // featured: true,
       },
       {
-        name: "Tiramisu",
-        description: "Coffee-soaked ladyfingers layered with mascarpone cream",
-        price: "$11",
-        image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Double Cream Kunafa",
+        description: "A rich, indulgent dessert made with crispy layers of golden pastry, filled with velvety double cream, and soaked in sweet syrup for a heavenly, melt-in-your-mouth experience",
+        price: "₹349",
+        image: dessert_3,
+        // featured: true,
       },
       {
-        name: "Apple Tarte Tatin",
-        description: "Caramelized apple tart served with vanilla ice cream",
-        price: "$13",
-        image: "https://images.unsplash.com/photo-1567191001695-d6d7d90e1011?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Double Fudge Brownie",
+        description: "A decadent, chocolate-packed brownie with a gooey, fudgy center, topped with rich chocolate fudge for an ultimate sweet treat",
+        price: "₹260",
+        image: dessert_4,
+        // featured: true,
+      },
+      {
+        name: "Hot Brownie",
+        description: "A warm, melt-in-your-mouth brownie straight from the oven, with a rich, fudgy texture and a hint of gooey chocolate perfection",
+        price: "₹195",
+        image: dessert_5,
+        // featured: true,
       },
     ],
     beverages: [
       {
-        name: "Wine Selection",
-        description: "Extensive selection of domestic and international wines - ask for our complete wine list",
-        price: "Varies",
-        image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Blue Curacao Mojito",
+        description: "A refreshing twist on the classic mojito, infused with zesty lime, mint, and the vibrant citrusy flavor of Blue Curacao for a cool, tropical vibe",
+        price: "₹230",
+        image: beverages_1,
       },
       {
-        name: "Craft Cocktails",
-        description: "House-made signature cocktails with premium spirits and fresh ingredients",
-        price: "$14-18",
-        image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Blueberry Mojito",
+        description: "A refreshing blend of muddled blueberries, mint, and lime, mixed with soda for a fruity twist on the classic mojito",
+        price: "₹230",
+        image: beverages_2,
       },
       {
-        name: "Artisanal Mocktails",
-        description: "Creative non-alcoholic beverages featuring fresh fruits and herbs",
-        price: "$9",
-        featured: true,
-        image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        name: "Iced Lemon Tea",
+        description: "A chilled and refreshing brew of black tea with a zesty splash of lemon, perfect for a cool and energizing sip",
+        price: "₹130",
+        image: beverages_3,
       },
+      {
+        name: "Chocolate Milkshake",
+        description: "A rich and creamy blend of chilled milk and decadent chocolate, topped with a swirl of whipped cream for the ultimate sweet treat",
+        price: "₹260",
+        image: beverages_4,
+      },
+      {
+        name: "Cocount Milkshake",
+        description: "A smooth and refreshing blend of creamy coconut milk and ice, offering a tropical twist in every cool, luscious sip",
+        price: "₹290",
+        image: beverages_5,
+      },
+      {
+        name: "Nutella Milkshake",
+        description: "A rich and indulgent milkshake made with creamy Nutella and chilled milk, topped with whipped cream for a chocolaty delight",
+        price: "₹290",
+        image: beverages_6,
+      },
+     
     ],
   };
 
@@ -165,7 +277,7 @@ const Menu = () => {
             {categories.map((category) => (
               <button
                 key={category.id}
-                className={`px-4 py-2 font-medium whitespace-nowrap transition-colors rounded ${
+                className={`px-4 py-2 font-medium whitespace-nowrap transition-colors rounded ₹{
                   activeCategory === category.id
                     ? "bg-onedine-burgundy text-white"
                     : "text-gray-600 hover:bg-gray-100"
@@ -193,7 +305,7 @@ const Menu = () => {
 
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {menuItems[activeCategory as keyof typeof menuItems].map((item, index) => (
-              <ScrollAnimation key={`${activeCategory}-${index}`} delay={index * 100}>
+              <ScrollAnimation key={`₹{activeCategory}-₹{index}`} delay={index * 100}>
                 <MenuItem {...item} />
                 {index < menuItems[activeCategory as keyof typeof menuItems].length - 1 && (
                   <div className="menu-item-divider" />
